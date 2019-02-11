@@ -25,3 +25,8 @@ Here are a couple of things to keep in mind:
 You are being given starter code for today, in the `index.html` and `app.js` files inside of this directory. The success of your code will be determined by whether it passes tests that are in the `tests.js` file. You do not need to do anything with `tests.js`, though you should take a look at it to see how it works.
 
 Submission instructions are in the Canvas assignment.
+
+
+For question number 4, I referenced this site: https://code-maven.com/javascript-function-that-accepts-any-number-of-arguments
+
+For question numbers 5 and 6, I referenced this site: https://stackoverflow.com/questions/19175063/multiply-all-elements-in-array
