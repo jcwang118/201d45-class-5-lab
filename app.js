@@ -8,7 +8,14 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+// function sum() { //eslint-disable-line
+// var resultSum = 0;
+// for(var i = 0; i < arguments.length; i++){
+//   resultSum += arguments[i];
+// }
+// var resultString = 'The sum of ' + [arguments[0]] + ' and ' + [arguments[1]] + ' is ' + resultSum + '.';
+// return [resultSum, resultString];
+function sum(a,b) { //eslint-disable-line
   var resultSum = a + b;
   var resultString = 'The sum of ' + a + ' and ' + b + ' is ' + resultSum + '.';
   return [resultSum, resultString];
@@ -17,6 +24,7 @@ function sum(a, b) { //eslint-disable-line
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -29,10 +37,18 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+// function multiply() { //eslint-disable-line
+//   var resultProduct = 0;
+//   for(var i = 0; i < arguments.length; i++){
+//     resultProduct *= arguments[i];
+//   }
+//   var resultString = 'The product of ' + [arguments[0]] + ' and ' + [arguments[1]] + ' is ' + resultProduct + '.';
+//   console.log(resultString);
+//   return [resultProduct, resultString];
+
 function multiply(a, b) { //eslint-disable-line
   var resultProduct = a * b;
   var resultString = 'The product of ' + a + ' and ' + b + ' is ' + resultProduct + '.';
-  console.log(resultString);
   return [resultProduct, resultString];
 }
 //return [45, 'The product of 5 and 9 is 45.'];
@@ -52,13 +68,23 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
+// // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  var sum_first_two = sum(a,b)[0];
+  var sum_all_three= sum(sum_first_two,c)[0];
+  var sum_string = a + ' and ' + b + ' and ' + c + ' sum to ' + sum_all_three + '.';
 
+  var multiply_first_two = multiply(a,b)[0];
+  var multiply_all_three = multiply(multiply_first_two, c)[0];
+  var multiply_string = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply_all_three + '.';
+
+  return[sum_all_three, multiply_all_three, sum_string, multiply_string];
+
+// // return [16, 140, '4 and 7 and 5 sum to 16.', 'The product of 4 and 7 and 5 is 140.' ]
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
