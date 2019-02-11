@@ -26,6 +26,8 @@ You are being given starter code for today, in the `index.html` and `app.js` fil
 
 Submission instructions are in the Canvas assignment.
 
+---
+#### References
 
 For question number 4, I referenced this site: https://code-maven.com/javascript-function-that-accepts-any-number-of-arguments
 
