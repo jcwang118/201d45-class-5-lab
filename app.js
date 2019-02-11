@@ -104,7 +104,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
   var resultSum = 0;
   for(var i = 0; i < testArray.length; i++){
-    resultSum += testArray[i];
+    resultSum = sum(resultSum,testArray[i])[0];
   }
   var resultString = testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + resultSum + ' is their sum.';
   console.log(resultString);
